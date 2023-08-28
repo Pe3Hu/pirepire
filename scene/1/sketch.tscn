@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs2wdp3blu3mj"]
+
+[ext_resource type="PackedScene" uid="uid://s1nhwl4kap4l" path="res://scene/1/abbey.tscn" id="1_aspdg"]
+[ext_resource type="FontFile" uid="uid://doojbg285h2o2" path="res://asset/font/letter/Chunk Five Print.otf" id="1_shk5s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
+
+[node name="Sketch" type="MarginContainer"]
+custom_minimum_size = Vector2(5, 5)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="BG" type="Panel" parent="."]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7paps")
+
+[node name="Abbey" parent="." instance=ExtResource("1_aspdg")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_shk5s")
+horizontal_alignment = 1
+vertical_alignment = 1

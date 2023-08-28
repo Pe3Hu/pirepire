@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://sr5i4y7vinr3"]
+
+[ext_resource type="Script" path="res://scene/2/bead.gd" id="1_hr6d1"]
+[ext_resource type="FontFile" uid="uid://doojbg285h2o2" path="res://asset/font/letter/Chunk Five Print.otf" id="2_n76q7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
+bg_color = Color(0.168627, 0.690196, 0.603922, 1)
+
+[node name="Bead" type="MarginContainer"]
+custom_minimum_size = Vector2(5, 5)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.5
+offset_top = -2.5
+offset_right = 2.5
+offset_bottom = 2.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_hr6d1")
+
+[node name="BG" type="Panel" parent="."]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7paps")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_n76q7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="Index" type="Label" parent="VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_n76q7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Ornaments" type="VBoxContainer" parent="VBox"]
+layout_mode = 2
+alignment = 1

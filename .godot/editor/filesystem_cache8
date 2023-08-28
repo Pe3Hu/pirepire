@@ -1,0 +1,50 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1693220291
+::res://asset/::1693214901
+default_env.tres::Environment::-1::1690116911::0::1::::<><>::
+icon.png::CompressedTexture2D::2432420761471245026::1690116911::1690116911::1::::<><>::
+icon.svg::CompressedTexture2D::9162371498834860976::1690116911::1690116911::1::::<><>::
+README.md::TextFile::-1::1690795285::0::1::::<><>::
+::res://asset/font/::1693214901
+::res://asset/font/digital/::1693214951
+Cilok There.otf::FontFile::7636122685779551910::1692120832::1693214951::1::::<><>::
+Montserrat-Regular.ttf::FontFile::28103766338908602::1390883084::1693214951::1::::<><>::
+SwilyBright-Italic.otf::FontFile::6130272033828709201::1689611680::1693214951::1::::<><>::
+::res://asset/font/letter/::1693214951
+Chunk Five Print.otf::FontFile::8171355747686982491::1693025532::1693214951::1::::<><>::
+JosefinSans-Bold.ttf::FontFile::102095651205019434::1693025548::1693214951::1::::<><>::
+LeagueGothic-Regular.otf::FontFile::6804102773878610772::1693025542::1693214951::1::::<><>::
+::res://asset/json/::1690795113
+::res://scene/::1693219737
+::res://scene/0/::1693220315
+abbey.tscn::PackedScene::1317876002390996129::1693220315::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf
+blank.tscn::PackedScene::706186300528003691::1693216875::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf
+game.gd::GDScript::-1::1693215137::0::1::::<>Node<>::
+game.tscn::PackedScene::8246655032211948728::1693219818::0::1::::<><>::res://scene/0/game.gd
+::res://scene/1/::1693220298
+chalice.tscn::PackedScene::7355851105207814720::1693219923::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf
+preacher.gd::GDScript::-1::1693220235::0::1::::<>MarginContainer<>::
+preacher.tscn::PackedScene::3158175352180954667::1693220273::0::1::::<><>::res://scene/1/preacher.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://bspbj4banmytx::::res://scene/2/rosary.tscn
+sermon.gd::GDScript::-1::1693220062::0::1::::<>MarginContainer<>::
+sermon.tscn::PackedScene::1325280969113261575::1693220298::0::1::::<><>::res://scene/1/sermon.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://dc2h17yb0o52s::::res://scene/1/chalice.tscn
+sketch.tscn::PackedScene::3706900030925604609::1693219818::0::1::::<><>::uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf
+::res://scene/2/::1693220236
+bead.gd::GDScript::-1::1693218533::0::1::::<>MarginContainer<>::
+bead.tscn::PackedScene::1300330965172619042::1693219788::0::1::::<><>::res://scene/2/bead.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf
+ornament.gd::GDScript::-1::1693219573::0::1::::<>MarginContainer<>::
+ornament.tscn::PackedScene::5963310384361094857::1693219788::0::1::::<><>::res://scene/2/ornament.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf
+rosary.gd::GDScript::-1::1693220236::0::1::::<>MarginContainer<>::
+rosary.tscn::PackedScene::3680863849366322157::1693219819::0::1::::<><>::res://scene/2/rosary.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf
+socket.gd::GDScript::-1::1693216875::0::1::::<>MarginContainer<>::
+socket.tscn::PackedScene::2131265278117024509::1693219788::0::1::::<><>::res://scene/2/socket.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf
+::res://scene/3/::1693219722
+dice.gd::GDScript::-1::1693216985::0::1::::<>MarginContainer<>::
+dice.tscn::PackedScene::8867107619945943476::1693219722::0::1::::<><>::res://scene/3/dice.gd
+facet.gd::GDScript::-1::1692289045::0::1::::<>MarginContainer<>::
+facet.tscn::PackedScene::1376893502277098245::1693219722::0::1::::<><>::res://scene/3/facet.gd<>uid://rgtjtuf31pht
+icon.gd::GDScript::-1::1692289000::0::1::::<>MarginContainer<>::
+icon.tscn::PackedScene::1206767332483991149::1693219722::0::1::::<><>::res://scene/3/icon.gd<>uid://doojbg285h2o2
+indicator.gd::GDScript::-1::1692192191::0::1::::<>MarginContainer<>::
+indicator.tscn::PackedScene::3739802612801790678::1693219722::0::1::::<><>::res://scene/3/indicator.gd<>uid://doojbg285h2o2
+::res://script/::1693220273
+Global.gd::GDScript::-1::1693220273::0::1::::<>Node<>::
