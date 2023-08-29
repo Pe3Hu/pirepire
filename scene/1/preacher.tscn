@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bk83xl0rmwqet"]
+[gd_scene load_steps=6 format=3 uid="uid://bk83xl0rmwqet"]
 
 [ext_resource type="Script" path="res://scene/1/preacher.gd" id="1_busj1"]
 [ext_resource type="FontFile" uid="uid://bpprasbmgujy" path="res://asset/font/letter/JosefinSans-Bold.ttf" id="1_cb43r"]
 [ext_resource type="PackedScene" uid="uid://bspbj4banmytx" path="res://scene/2/rosary.tscn" id="2_nki88"]
+[ext_resource type="PackedScene" uid="uid://cj31171eyrvxu" path="res://scene/4/indicators.tscn" id="3_it0sa"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
 
@@ -27,10 +28,10 @@ script = ExtResource("1_busj1")
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_7paps")
 
-[node name="Rosary" parent="." instance=ExtResource("2_nki88")]
+[node name="VBox" type="VBoxContainer" parent="."]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="."]
+[node name="Index" type="Label" parent="VBox"]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 4
@@ -38,3 +39,9 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_cb43r")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Indicators" parent="VBox" instance=ExtResource("3_it0sa")]
+layout_mode = 2
+
+[node name="Rosary" parent="VBox" instance=ExtResource("2_nki88")]
+layout_mode = 2

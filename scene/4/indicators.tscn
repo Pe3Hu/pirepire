@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj31171eyrvxu"]
+
+[ext_resource type="PackedScene" uid="uid://clk3sq60ajanr" path="res://scene/4/indicator.tscn" id="1_3xbtx"]
+[ext_resource type="Script" path="res://scene/4/indicators.gd" id="1_roa8u"]
+[ext_resource type="PackedScene" uid="uid://dhtnc7aol46sc" path="res://scene/4/ultimate.tscn" id="4_2h06b"]
+
+[node name="Indicators" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_roa8u")
+
+[node name="BG" type="Panel" parent="."]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Title" type="Label" parent="VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bars" type="VBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Health" parent="VBox/Bars" instance=ExtResource("1_3xbtx")]
+layout_mode = 2
+
+[node name="Ultimate" parent="VBox" instance=ExtResource("4_2h06b")]
+visible = false
+layout_mode = 2

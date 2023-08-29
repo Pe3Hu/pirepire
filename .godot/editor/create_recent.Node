@@ -1,3 +1,4 @@
-HBoxContainer
 VBoxContainer
+Panel
+HBoxContainer
 GridContainer

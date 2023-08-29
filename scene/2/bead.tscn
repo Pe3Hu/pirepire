@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://sr5i4y7vinr3"]
+[gd_scene load_steps=5 format=3 uid="uid://sr5i4y7vinr3"]
 
 [ext_resource type="Script" path="res://scene/2/bead.gd" id="1_hr6d1"]
 [ext_resource type="FontFile" uid="uid://doojbg285h2o2" path="res://asset/font/letter/Chunk Five Print.otf" id="2_n76q7"]
+[ext_resource type="PackedScene" uid="uid://rgtjtuf31pht" path="res://scene/4/icon.tscn" id="3_v8rsm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
 bg_color = Color(0.168627, 0.690196, 0.603922, 1)
@@ -47,6 +48,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_n76q7")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Meeple" parent="VBox" instance=ExtResource("3_v8rsm")]
+visible = false
+layout_mode = 2
 
 [node name="Ornaments" type="VBoxContainer" parent="VBox"]
 layout_mode = 2

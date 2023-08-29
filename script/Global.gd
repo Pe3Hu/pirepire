@@ -64,6 +64,7 @@ func init_dice_substitutions() -> void:
 
 func init_num() -> void:
 	num.index = {}
+	num.index.preacher = 0
 
 
 func init_dict() -> void:
@@ -129,10 +130,14 @@ func init_scene() -> void:
 	scene.bead = load("res://scene/2/bead.tscn")
 	scene.ornament = load("res://scene/2/ornament.tscn")
 	
-	scene.icon = load("res://scene/3/icon.tscn")
 	scene.dice = load("res://scene/3/dice.tscn")
 	scene.facet = load("res://scene/3/facet.tscn")
-	pass
+	
+	scene.indicators = load("res://scene/4/indicators.tscn")
+	scene.indicator = load("res://scene/4/indicator.tscn")
+	scene.ultimate = load("res://scene/4/ultimate.tscn")
+	scene.cell = load("res://scene/4/cell.tscn")
+	scene.icon = load("res://scene/4/icon.tscn")
 
 
 func init_vec():
@@ -155,6 +160,16 @@ func init_window_size():
 
 func init_color():
 	color.indicator = {}
+	color.indicator.health = {}
+	color.indicator.health.fill = Color.from_hsv(0, 1, 0.9)
+	color.indicator.health.background = Color.from_hsv(0, 0.25, 0.9)
+	color.indicator.endurance = {}
+	color.indicator.endurance.fill = Color.from_hsv(0.33, 1, 0.9)
+	color.indicator.endurance.background = Color.from_hsv(0.33, 0.25, 0.9)
+	color.indicator.barrier = {}
+	color.indicator.barrier.fill = Color.from_hsv(0.5, 1, 0.9)
+	color.indicator.barrier.background = Color.from_hsv(0.5, 0.25, 0.9)
+
 
 
 func save(path_: String, data_: String):

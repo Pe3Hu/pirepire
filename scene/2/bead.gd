@@ -2,6 +2,7 @@ extends MarginContainer
 
 
 @onready var bg = $BG
+@onready var meeple = $VBox/Meeple
 @onready var index = $VBox/Index
 @onready var ornaments = $VBox/Ornaments
 
@@ -29,3 +30,9 @@ func set_attributes(input_: Dictionary) -> void:
 	
 	
 	custom_minimum_size = Global.vec.size.bead
+	meeple.label.text = "!"
+
+
+func switch_meeple() -> void:
+	meeple.visible = !meeple.visible
+	index.visible = !index.visible

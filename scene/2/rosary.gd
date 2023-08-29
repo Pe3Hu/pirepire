@@ -4,7 +4,9 @@ extends MarginContainer
 @onready var sockets = $Sockets
 
 var preacher = null
+var meeple = 0
 var beads = {}
+var chain = []
 
 
 func set_attributes(input_: Dictionary) -> void:
@@ -72,6 +74,7 @@ func set_beads_an_index() -> void:
 		input.index = index
 		index += 1
 		bead.set_attributes(input)
+		chain.append(grid)
 		
 		grid += directions.front()
 		
@@ -84,7 +87,6 @@ func set_beads_an_index() -> void:
 			
 			if !directions.is_empty():
 				grid += directions.front()
-				
 
 
 func set_beads_an_ornament() -> void:
@@ -109,4 +111,15 @@ func set_beads_an_ornament() -> void:
 		var ornament = Global.scene.ornament.instantiate()
 		input.bead.ornaments.add_child(ornament)
 		ornament.set_attributes(input)
-		
+
+
+func move_meeple(step_: int) -> void:
+	var bead = null
+	
+	if meeple == null:
+		meeple = 0
+	else:
+		bead = beads[chain[meeple]].switch_meeple()
+	
+	meeple = (meeple + step_ + chain.size()) % chain.size()
+	bead = beads[chain[meeple]].switch_meeple()
