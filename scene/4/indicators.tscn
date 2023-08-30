@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cj31171eyrvxu"]
+[gd_scene load_steps=5 format=3 uid="uid://cj31171eyrvxu"]
 
 [ext_resource type="PackedScene" uid="uid://clk3sq60ajanr" path="res://scene/4/indicator.tscn" id="1_3xbtx"]
 [ext_resource type="Script" path="res://scene/4/indicators.gd" id="1_roa8u"]
+[ext_resource type="PackedScene" uid="uid://dwe8i8rfynaa8" path="res://scene/4/intentions.tscn" id="3_uwxqo"]
 [ext_resource type="PackedScene" uid="uid://dhtnc7aol46sc" path="res://scene/4/ultimate.tscn" id="4_2h06b"]
 
 [node name="Indicators" type="MarginContainer"]
@@ -32,6 +33,12 @@ theme_override_constants/separation = 0
 alignment = 1
 
 [node name="Health" parent="VBox/Bars" instance=ExtResource("1_3xbtx")]
+layout_mode = 2
+
+[node name="Barrier" parent="VBox/Bars" instance=ExtResource("1_3xbtx")]
+layout_mode = 2
+
+[node name="Intentions" parent="VBox" instance=ExtResource("3_uwxqo")]
 layout_mode = 2
 
 [node name="Ultimate" parent="VBox" instance=ExtResource("4_2h06b")]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://clk3sq60ajanr"]
+[gd_scene load_steps=5 format=3 uid="uid://clk3sq60ajanr"]
 
 [ext_resource type="Script" path="res://scene/4/indicator.gd" id="1_kckou"]
+[ext_resource type="FontFile" uid="uid://doojbg285h2o2" path="res://asset/font/letter/Chunk Five Print.otf" id="2_lpy2f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3sqh"]
 content_margin_left = 0.0
@@ -42,3 +43,11 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_neula")
 max_value = 0.0
 step = 1.0
 show_percentage = false
+
+[node name="Value" type="Label" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lpy2f")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

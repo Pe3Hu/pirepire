@@ -17,17 +17,15 @@ var anchor = null
 var temp = true
 
 
-func init(faces_: int) -> void:
-	faces = faces_
-	#time = Time.get_unix_time_from_system()
-
-
 func _ready() -> void:
+	#time = Time.get_unix_time_from_system()
 	for _i in faces:
-		var value = _i + 1
 		var facet = Global.scene.facet.instantiate()
-		facet.init(value)
+		var input = {}
+		input.dice = self
+		input.value = _i + 1
 		facets.add_child(facet)
+		facet.set_attributes(input)
 	
 	anchor = Vector2(0, -Global.vec.size.facet.y)
 	update_size()

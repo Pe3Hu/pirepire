@@ -24,6 +24,7 @@ func _ready() -> void:
 
 func init_arr() -> void:
 	arr.edge = [1, 2, 3, 4, 5, 6]
+	arr.phase = ["tribune transfer phase", "chalice filling phase", "sequence selection phase", "barrier-building phase", "wounding phase", "chalice emptying phase"]
 	
 	init_dice_substitutions()
 
@@ -65,6 +66,10 @@ func init_dice_substitutions() -> void:
 func init_num() -> void:
 	num.index = {}
 	num.index.preacher = 0
+	
+	num.indicator = {}
+	num.indicator.health = 50
+	num.indicator.barrier = 1
 
 
 func init_dict() -> void:
@@ -138,6 +143,10 @@ func init_scene() -> void:
 	scene.ultimate = load("res://scene/4/ultimate.tscn")
 	scene.cell = load("res://scene/4/cell.tscn")
 	scene.icon = load("res://scene/4/icon.tscn")
+	scene.intentions = load("res://scene/4/intentions.tscn")
+	scene.intention = load("res://scene/4/intention.tscn")
+	
+	
 
 
 func init_vec():
@@ -162,13 +171,13 @@ func init_color():
 	color.indicator = {}
 	color.indicator.health = {}
 	color.indicator.health.fill = Color.from_hsv(0, 1, 0.9)
-	color.indicator.health.background = Color.from_hsv(0, 0.25, 0.9)
+	color.indicator.health.background = Color.from_hsv(0, 0.5, 0.9)
 	color.indicator.endurance = {}
 	color.indicator.endurance.fill = Color.from_hsv(0.33, 1, 0.9)
-	color.indicator.endurance.background = Color.from_hsv(0.33, 0.25, 0.9)
+	color.indicator.endurance.background = Color.from_hsv(0.33, 0.5, 0.9)
 	color.indicator.barrier = {}
-	color.indicator.barrier.fill = Color.from_hsv(0.5, 1, 0.9)
-	color.indicator.barrier.background = Color.from_hsv(0.5, 0.25, 0.9)
+	color.indicator.barrier.fill = Color.from_hsv(210.0/360, 1, 0.9)
+	color.indicator.barrier.background = Color.from_hsv(210.0/360, 0.5, 0.9)
 
 
 
@@ -201,8 +210,36 @@ func get_all_substitutions(array_: Array):
 				next.append(pair)
 		
 		result = next
+		
 		for _j in range(result.size()-1,-1,-1):
 			if result[_j].size() < _i+1:
 				result.erase(result[_j])
 	
 	return result
+
+
+func get_all_permutations(array_: Array):
+	var result = []
+	permutation(result, array_, 0)
+	return result
+
+
+func permutation(result_: Array, array_: Array, l_: int):
+	if l_ >= array_.size():
+		var array = []
+		array.append_array(array_)
+		result_.append(array)
+		return
+	
+	permutation(result_, array_, l_+1)
+	
+	for _i in range(l_+1,array_.size(),1):
+		swap(array_, l_, _i)
+		permutation(result_, array_, l_+1)
+		swap(array_, l_, _i)
+
+
+func swap(array_: Array, i_: int, j_: int):
+	var temp = array_[i_]
+	array_[i_] = array_[j_]
+	array_[j_] = temp

@@ -96,9 +96,11 @@ func set_beads_an_ornament() -> void:
 		
 		match input.bead.color:
 			"red":
-				input.gist = "damage"
+				input.gist = "wound"
+				input.target = "listener"
 			"blue":
-				input.gist = "shield"
+				input.gist = "barrier"
+				input.target = "speaker"
 		
 		match preacher.kind:
 			"zebra":
@@ -106,20 +108,36 @@ func set_beads_an_ornament() -> void:
 				input.value = integer * 2 + 5
 				
 				if input.bead.color == "blue":
-					input.value -= 3
+					input.value -= 2
 		
 		var ornament = Global.scene.ornament.instantiate()
 		input.bead.ornaments.add_child(ornament)
 		ornament.set_attributes(input)
 
 
-func move_meeple(step_: int) -> void:
+func move_meeple_by_step(step_: int) -> void:
 	var bead = null
 	
 	if meeple == null:
 		meeple = 0
 	else:
-		bead = beads[chain[meeple]].switch_meeple()
+		bead = get_bead_with_meeple().switch_meeple()
 	
 	meeple = (meeple + step_ + chain.size()) % chain.size()
-	bead = beads[chain[meeple]].switch_meeple()
+	bead = get_bead_with_meeple().switch_meeple()
+
+
+func get_bead_with_meeple() -> MarginContainer:
+	return beads[chain[meeple]]
+
+
+func move_meeple_on_spot(spot_: int) -> void:
+	for grid in beads:
+		var bead = beads[grid]
+		
+		if bead.meeple.visible:
+			bead.switch_meeple()
+	
+	meeple = spot_
+	var bead = get_bead_with_meeple()
+	bead.switch_meeple()

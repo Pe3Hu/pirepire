@@ -6,19 +6,30 @@ extends MarginContainer
 
 
 func _ready() -> void:
+	var priorities = []
+	var priority = {}
+	priority["wound infliction"] = 1.5
+	priority["wound avoidance"] = 1.2
+	priorities.append(priority)
+	priority = {}
+	priority["wound infliction"] = 1.2
+	priority["wound avoidance"] = 1.5
+	priorities.append(priority)
+	
 	for _i in 2:
-		add_preacher("zebra")
+		var input = {}
+		input.priority = priorities[_i]
+		input.kind = "zebra"
+		add_preacher(input)
 	
 	add_sermon()
 
 
-func add_preacher(kind_: String) -> void:
-	var input = {}
-	input.abbey = self
-	input.kind = kind_
+func add_preacher(input_: Dictionary) -> void:
+	input_.abbey = self
 	var preacher = Global.scene.preacher.instantiate()
 	preachers.add_child(preacher)
-	preacher.set_attributes(input)
+	preacher.set_attributes(input_)
 
 
 func add_sermon() -> void:
