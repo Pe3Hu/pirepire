@@ -20,6 +20,7 @@ func set_attributes(input_: Dictionary) -> void:
 	
 	var input = {}
 	input.preacher = self
+	input.rows = 2
 	rosary.set_attributes(input)
 	indicators.set_attributes(input)
 

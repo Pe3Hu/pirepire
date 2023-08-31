@@ -1,11 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bspbj4banmytx"]
+[gd_scene load_steps=4 format=3 uid="uid://bw2ulb85ojvm7"]
 
-[ext_resource type="Script" path="res://scene/2/rosary.gd" id="1_hgafe"]
-[ext_resource type="FontFile" uid="uid://doojbg285h2o2" path="res://asset/font/letter/Chunk Five Print.otf" id="2_6w6et"]
+[ext_resource type="FontFile" uid="uid://bpprasbmgujy" path="res://asset/font/letter/JosefinSans-Bold.ttf" id="1_6jfem"]
+[ext_resource type="Script" path="res://scene/2/fringe.gd" id="1_6ryjr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
 
-[node name="Rosary" type="MarginContainer"]
+[node name="Fringe" type="MarginContainer"]
 custom_minimum_size = Vector2(5, 5)
 anchors_preset = 8
 anchor_left = 0.5
@@ -20,7 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-script = ExtResource("1_hgafe")
+script = ExtResource("1_6ryjr")
 
 [node name="BG" type="Panel" parent="."]
 layout_mode = 2
@@ -31,21 +31,10 @@ visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_6w6et")
+theme_override_fonts/font = ExtResource("1_6jfem")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBox" type="VBoxContainer" parent="."]
-layout_mode = 2
-
-[node name="Beads" type="HBoxContainer" parent="VBox"]
-visible = false
-layout_mode = 2
-alignment = 1
-
-[node name="Sockets" type="GridContainer" parent="VBox"]
-layout_mode = 2
-
-[node name="Fringes" type="VBoxContainer" parent="VBox"]
+[node name="Beads" type="HBoxContainer" parent="."]
 layout_mode = 2
 alignment = 1

@@ -4,18 +4,20 @@ extends MarginContainer
 @onready var bg = $BG
 @onready var meeple = $VBox/Meeple
 @onready var index = $VBox/Index
+@onready var sun = $VBox/Sun
 @onready var ornaments = $VBox/Ornaments
 
 var rosary = null
 var socket = null
 var color = null
+var fringes = []
 
 
 func set_attributes(input_: Dictionary) -> void:
 	rosary = input_.rosary
 	socket = input_.socket
 	color = input_.color
-	socket.add_child(self)
+	sun.text = input_.sun
 	index.text = str(input_.index)
 	socket.bead = self
 	

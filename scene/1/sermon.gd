@@ -25,8 +25,8 @@ func set_attributes(input_: Dictionary) -> void:
 
 func start() -> void:
 	print("_____")
-	while !end:
-		follow_phase()
+	#while !end:
+	#	follow_phase()
 
 
 func reset_phases() -> void:

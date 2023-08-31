@@ -25,6 +25,7 @@ func _ready() -> void:
 func init_arr() -> void:
 	arr.edge = [1, 2, 3, 4, 5, 6]
 	arr.phase = ["tribune transfer phase", "chalice filling phase", "sequence selection phase", "barrier-building phase", "wounding phase", "chalice emptying phase"]
+	arr.sun = ["dawn", "noon", "dusk"]
 	
 	init_dice_substitutions()
 
@@ -134,6 +135,8 @@ func init_scene() -> void:
 	scene.socket = load("res://scene/2/socket.tscn")
 	scene.bead = load("res://scene/2/bead.tscn")
 	scene.ornament = load("res://scene/2/ornament.tscn")
+	scene.fringe = load("res://scene/2/fringe.tscn")
+	
 	
 	scene.dice = load("res://scene/3/dice.tscn")
 	scene.facet = load("res://scene/3/facet.tscn")
