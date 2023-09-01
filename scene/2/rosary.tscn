@@ -38,6 +38,10 @@ vertical_alignment = 1
 [node name="VBox" type="VBoxContainer" parent="."]
 layout_mode = 2
 
+[node name="Fringes" type="VBoxContainer" parent="VBox"]
+layout_mode = 2
+alignment = 1
+
 [node name="Beads" type="HBoxContainer" parent="VBox"]
 visible = false
 layout_mode = 2
@@ -45,7 +49,3 @@ alignment = 1
 
 [node name="Sockets" type="GridContainer" parent="VBox"]
 layout_mode = 2
-
-[node name="Fringes" type="VBoxContainer" parent="VBox"]
-layout_mode = 2
-alignment = 1

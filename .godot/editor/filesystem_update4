@@ -1,9 +1,4 @@
-res://scene/4/intentions.tscn
-res://scene/2/bead.gd
-res://script/Global.gd
-res://scene/2/rosary.gd
 res://scene/2/rosary.tscn
-res://scene/1/preacher.gd
 res://scene/1/sermon.tscn
 res://scene/1/chalice.tscn
 res://scene/1/preacher.tscn
@@ -11,8 +6,12 @@ res://scene/1/abbey.tscn
 res://scene/2/bead.tscn
 res://scene/2/ornament.tscn
 res://scene/4/indicators.tscn
-res://scene/1/sermon.gd
+res://scene/4/intentions.tscn
 res://scene/2/fringe.tscn
-res://scene/2/fringe.gd
 res://scene/4/icon.tscn
-res://scene/4/icon.gd
+res://scene/1/preacher.gd
+res://scene/1/abbey.gd
+res://scene/2/rosary.gd
+res://scene/4/indicators.gd
+res://scene/1/sermon.gd
+res://script/Global.gd

@@ -113,7 +113,8 @@ func set_beads_an_index() -> void:
 			var fringe = Global.scene.fringe.instantiate()
 			fringes.add_child(fringe)
 			input.direction = directions.front()
-			input.beads = [beads[grid]]
+			input.beads = fringe_beads
+			input.beads.append(beads[grid])
 			fringe.set_attributes(input)
 			directions = []
 		

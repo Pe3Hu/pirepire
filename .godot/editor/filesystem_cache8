@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1693476732
+::res://::1693579651
 ::res://asset/::1693214901
 default_env.tres::Environment::-1::1690116911::0::1::::<><>::
 icon.png::CompressedTexture2D::2432420761471245026::1690116911::1690116911::1::::<><>::
@@ -16,29 +16,30 @@ JosefinSans-Bold.ttf::FontFile::102095651205019434::1693025548::1693214951::1:::
 LeagueGothic-Regular.otf::FontFile::6804102773878610772::1693025542::1693214951::1::::<><>::
 ::res://asset/json/::1690795113
 ::res://scene/::1693299544
-::res://scene/0/::1693479297
+::res://scene/0/::1693479303
 blank.tscn::PackedScene::706186300528003691::1693216875::0::1::::<><>::uid://bpprasbmgujy
-fringe.tscn::PackedScene::3987547531561756340::1693479297::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf
 game.gd::GDScript::-1::1693396234::0::1::::<>Node<>::
 game.tscn::PackedScene::8246655032211948728::1693299645::0::1::::<><>::res://scene/0/game.gd
-::res://scene/1/::1693479126
+::res://scene/1/::1693481307
 abbey.gd::GDScript::-1::1693395232::0::1::::<>MarginContainer<>::
-abbey.tscn::PackedScene::1317876002390996129::1693479126::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>res://scene/1/abbey.gd
+abbey.tscn::PackedScene::1317876002390996129::1693481307::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>res://scene/1/abbey.gd
 chalice.gd::GDScript::-1::1693394246::0::1::::<>MarginContainer<>::
-chalice.tscn::PackedScene::7355851105207814720::1693479126::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>res://scene/1/chalice.gd
-preacher.gd::GDScript::-1::1693479126::0::1::::<>MarginContainer<>::
-preacher.tscn::PackedScene::3158175352180954667::1693479126::0::1::::<><>::res://scene/1/preacher.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://bspbj4banmytx::::res://scene/2/rosary.tscn<>uid://cj31171eyrvxu::::res://scene/4/indicators.tscn
+chalice.tscn::PackedScene::7355851105207814720::1693481307::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>res://scene/1/chalice.gd
+preacher.gd::GDScript::-1::1693480216::0::1::::<>MarginContainer<>::
+preacher.tscn::PackedScene::3158175352180954667::1693481307::0::1::::<><>::res://scene/1/preacher.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://bspbj4banmytx::::res://scene/2/rosary.tscn<>uid://cj31171eyrvxu::::res://scene/4/indicators.tscn
 sermon.gd::GDScript::-1::1693477783::0::1::::<>MarginContainer<>::
-sermon.tscn::PackedScene::1325280969113261575::1693479126::0::1::::<><>::res://scene/1/sermon.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://dc2h17yb0o52s::::res://scene/1/chalice.tscn
+sermon.tscn::PackedScene::1325280969113261575::1693481307::0::1::::<><>::res://scene/1/sermon.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://dc2h17yb0o52s::::res://scene/1/chalice.tscn
 sketch.gd::GDScript::-1::1693394115::0::1::::<>MarginContainer<>::
 sketch.tscn::PackedScene::3706900030925604609::1693394115::0::1::::<><>::uid://s1nhwl4kap4l
-::res://scene/2/::1693479126
+::res://scene/2/::1693481307
 bead.gd::GDScript::-1::1693477433::0::1::::<>MarginContainer<>::
-bead.tscn::PackedScene::1300330965172619042::1693479126::0::1::::<><>::res://scene/2/bead.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf<>uid://rgtjtuf31pht::::res://scene/4/icon.tscn
+bead.tscn::PackedScene::1300330965172619042::1693481307::0::1::::<><>::res://scene/2/bead.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf<>uid://rgtjtuf31pht::::res://scene/4/icon.tscn
+fringe.gd::GDScript::-1::1693481182::0::1::::<>MarginContainer<>::
+fringe.tscn::PackedScene::3987547531561756340::1693481307::0::1::::<><>::uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>res://scene/2/fringe.gd
 ornament.gd::GDScript::-1::1693392179::0::1::::<>MarginContainer<>::
-ornament.tscn::PackedScene::5963310384361094857::1693479126::0::1::::<><>::res://scene/2/ornament.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf
-rosary.gd::GDScript::-1::1693479106::0::1::::<>MarginContainer<>::
-rosary.tscn::PackedScene::3680863849366322157::1693479126::0::1::::<><>::res://scene/2/rosary.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf
+ornament.tscn::PackedScene::5963310384361094857::1693481307::0::1::::<><>::res://scene/2/ornament.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf
+rosary.gd::GDScript::-1::1693481182::0::1::::<>MarginContainer<>::
+rosary.tscn::PackedScene::3680863849366322157::1693481307::0::1::::<><>::res://scene/2/rosary.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf
 socket.gd::GDScript::-1::1693216875::0::1::::<>MarginContainer<>::
 socket.tscn::PackedScene::2131265278117024509::1693388047::0::1::::<><>::res://scene/2/socket.gd<>uid://doojbg285h2o2
 ::res://scene/3/::1693392306
@@ -46,20 +47,20 @@ dice.gd::GDScript::-1::1693392306::0::1::::<>MarginContainer<>::
 dice.tscn::PackedScene::8867107619945943476::1693299544::0::1::::<><>::res://scene/3/dice.gd
 facet.gd::GDScript::-1::1693391535::0::1::::<>MarginContainer<>::
 facet.tscn::PackedScene::1376893502277098245::1693388047::0::1::::<><>::res://scene/3/facet.gd<>uid://rgtjtuf31pht
-::res://scene/4/::1693479126
+::res://scene/4/::1693481307
 cell.gd::GDScript::-1::1693385583::0::1::::<>MarginContainer<>::
 cell.tscn::PackedScene::284602120535810602::1693384969::0::1::::<><>::res://scene/4/cell.gd
-icon.gd::GDScript::-1::1693385611::0::1::::<>MarginContainer<>::
-icon.tscn::PackedScene::1206767332483991149::1693299931::0::1::::<><>::res://scene/4/icon.gd<>uid://doojbg285h2o2
+icon.gd::GDScript::-1::1693479968::0::1::::<>MarginContainer<>::
+icon.tscn::PackedScene::1206767332483991149::1693481307::0::1::::<><>::res://scene/4/icon.gd<>uid://doojbg285h2o2::::res://asset/font/letter/Chunk Five Print.otf
 indicator.gd::GDScript::-1::1693395749::0::1::::<>MarginContainer<>::
 indicator.tscn::PackedScene::5567295534431684211::1693397123::0::1::::<><>::res://scene/4/indicator.gd<>uid://doojbg285h2o2
 indicators.gd::GDScript::-1::1693394877::0::1::::<>MarginContainer<>::
-indicators.tscn::PackedScene::5463970330822249086::1693479126::0::1::::<><>::uid://clk3sq60ajanr::::res://scene/4/indicator.tscn<>res://scene/4/indicators.gd<>uid://dwe8i8rfynaa8::::res://scene/4/intentions.tscn<>uid://dhtnc7aol46sc::::res://scene/4/ultimate.tscn
+indicators.tscn::PackedScene::5463970330822249086::1693481307::0::1::::<><>::uid://clk3sq60ajanr::::res://scene/4/indicator.tscn<>res://scene/4/indicators.gd<>uid://dwe8i8rfynaa8::::res://scene/4/intentions.tscn<>uid://dhtnc7aol46sc::::res://scene/4/ultimate.tscn
 intention.gd::GDScript::-1::1693391652::0::1::::<>MarginContainer<>::
 intention.tscn::PackedScene::2230195188527636786::1693397123::0::1::::<><>::res://scene/4/intention.gd<>uid://bpprasbmgujy
 intentions.gd::GDScript::-1::1693396690::0::1::::<>MarginContainer<>::
-intentions.tscn::PackedScene::8713693829036777193::1693479126::0::1::::<><>::res://scene/4/intentions.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://rgtjtuf31pht::::res://scene/4/icon.tscn
+intentions.tscn::PackedScene::8713693829036777193::1693481307::0::1::::<><>::res://scene/4/intentions.gd<>uid://bpprasbmgujy::::res://asset/font/letter/JosefinSans-Bold.ttf<>uid://rgtjtuf31pht::::res://scene/4/icon.tscn
 ultimate.gd::GDScript::-1::1690125234::0::1::::<>MarginContainer<>::
 ultimate.tscn::PackedScene::7690601707765615930::1693384969::0::1::::<><>::res://scene/4/ultimate.gd<>uid://eb4mc1porkfq
-::res://script/::1693476920
-Global.gd::GDScript::-1::1693476920::0::1::::<>Node<>::
+::res://script/::1693479968
+Global.gd::GDScript::-1::1693479968::0::1::::<>Node<>::

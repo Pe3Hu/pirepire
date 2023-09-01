@@ -45,6 +45,8 @@ func follow_phase() -> void:
 			listener = preachers.get_child(order)
 			order = (order + 1) % preachers.get_child_count()
 			speaker = preachers.get_child(order)
+		"barrier-degradation phase":
+			speaker.indicators.half_barrier()
 		"chalice filling phase":
 			chalice.roll_dices(speaker.verses)
 		"sequence selection phase":

@@ -24,7 +24,7 @@ func _ready() -> void:
 
 func init_arr() -> void:
 	arr.edge = [1, 2, 3, 4, 5, 6]
-	arr.phase = ["tribune transfer phase", "chalice filling phase", "sequence selection phase", "barrier-building phase", "wounding phase", "chalice emptying phase"]
+	arr.phase = ["tribune transfer phase", "barrier-degradation phase", "chalice filling phase", "sequence selection phase", "barrier-building phase", "wounding phase", "chalice emptying phase"]
 	arr.sun = ["dawn", "noon", "dusk"]
 	
 	init_dice_substitutions()

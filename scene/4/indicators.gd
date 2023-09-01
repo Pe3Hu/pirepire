@@ -42,3 +42,7 @@ func get_indicator_based_on_name(name_: String) -> Variant:
 			return indicator
 	
 	return null
+
+
+func half_barrier() -> void:
+	barrier.update_value("current", -barrier.bar.value / 2)

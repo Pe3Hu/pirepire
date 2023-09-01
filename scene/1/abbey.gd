@@ -15,11 +15,13 @@ func _ready() -> void:
 	priority["wound infliction"] = 1.2
 	priority["wound avoidance"] = 1.5
 	priorities.append(priority)
+	var rows = [3, 4]
 	
 	for _i in 2:
 		var input = {}
 		input.priority = priorities[_i]
 		input.kind = "zebra"
+		input.rows = rows[_i]
 		add_preacher(input)
 	
 	add_sermon()

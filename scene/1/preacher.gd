@@ -13,14 +13,14 @@ var priority = {}
 
 
 func set_attributes(input_: Dictionary) -> void:
-	index.text = str(Global.num.index.preacher)
+	index.text = "Preacher #" + str(Global.num.index.preacher)
 	Global.num.index.preacher += 1
 	kind = input_.kind
 	priority = input_.priority
 	
 	var input = {}
 	input.preacher = self
-	input.rows = 2
+	input.rows = input_.rows
 	rosary.set_attributes(input)
 	indicators.set_attributes(input)
 
